@@ -506,8 +506,66 @@ body{
     margin-right: 250px;
     margin-bottom: -20px;
 }
+/* WHY US AND TESTIMO SECTION */
 
+.homepage-why-as-testimo-section-wrapper{
+  position: relative;
+  max-height: 1500px;
+}
 
+.whyus-wrapper{
+    max-width: 75%;
+    margin: auto;
+    padding-left: 48px;
+}
+.whyus-wrapper > h1{
+    font-family: Barlow, sans-serif;
+    font-size: 5em;
+    color: black;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.whyus-wrapper > p{
+    font-family: Barlow, sans-serif;
+    font-size: 3em;
+}
+
+.whyus-wrapper > p > span {
+  color: #6CFF6C;
+  text-shadow: #6CFF6C 30px 0 50px;
+  font-family: bold;
+  font-family: Barlow, sans-serif;
+
+}
+.moon-bg{
+   height: 1200px;
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.testimo-outer-wrapper{
+    width: 100%;
+    /* background: rgb(61, 61, 61);
+    opacity: 0.1; */
+}
+
+.testimo-inner-wrapper{
+    max-width: 75%;
+    margin: 300px auto;
+    text-align: center;
+    border: 8px solid #07BDF0;
+    height: 450px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimo-inner-wrapper > p {
+    max-width: 900px;
+}
 /* FLOAT
 ---------- */
 .labtop-float {
