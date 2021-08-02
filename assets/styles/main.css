@@ -14,6 +14,108 @@ body{
     color: #fff;
 }
 
+/* ANIMATIONS AND FLAUTINGS */
+/* FLOAT
+---------- */
+.labtop-float {
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float1 3s ease-in-out infinite;
+}
+
+@keyframes float1 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+/* float 2 */
+.labtop-screen {
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float2 3s ease-in-out infinite;
+}
+
+@keyframes float2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* float 3 */
+.floating-ball {
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float3 3s ease-in-out infinite;
+}
+
+@keyframes float3 {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(20px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+
+
+/* float4 */
+.floating-left-right {
+	overflow: hidden;
+	transform: translatex(0px);
+	animation: float4 3s ease-in-out infinite;
+}
+
+@keyframes float4 {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-50px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+/* rotate float */
+/* float 3 */
+.rotating-ball {
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: rotateFloat 3s ease-in-out infinite;
+}
+
+@keyframes rotateFloat {
+	0% {
+		transform: rotate(30deg);
+	}
+	50% {
+		transform: rotate(-30deg);
+	}
+	100% {
+		transform: rotate(30deg);
+	}
+}
+
+
 /* HOME PAGE HERO SECTION 
 --------------------------*/
 .homepage-hero-wrapper{
@@ -261,7 +363,6 @@ body{
    }
 
 
-
    
  .homepage-seo-image-wrapper > img:nth-of-type(1){
        position: absolute;
@@ -283,7 +384,7 @@ body{
     max-width: 85%;
     margin: 350px auto;
     align-items: center;
-    padding-top: 90px;
+    padding-top: 40px;
     position: relative;
 
 }
@@ -510,6 +611,7 @@ body{
 
 .homepage-why-as-testimo-section-wrapper{
   position: relative;
+  background-color: #0F0F0F;
 }
 
 .whyus-wrapper{
@@ -537,7 +639,7 @@ body{
 
 }
 .moon-bg{
-   height: 1200px;
+   height: 1000px;
    position: absolute;
    right: 0;
    top: 0;
@@ -566,104 +668,108 @@ body{
 .testimo-inner-wrapper > p {
     max-width: 1000px;
 }
-/* FLOAT
----------- */
-.labtop-float {
-	overflow: hidden;
-	transform: translatey(0px);
-	animation: float1 3s ease-in-out infinite;
+
+/* HOMEPAGE CONTACT SECTION STYLE
+--------------------------------- */
+
+.contact-section-outer-wrapper{
+    background-color: #000;
+    position: relative;
+    max-height: 1351px;
 }
 
-@keyframes float1 {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+.contact-section-outer-wrapper > img {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+     left: 0;
+     height: 100%;
+}
+.contact-section-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 85%;
+    margin: auto;
+    height: 1200px;
+    z-index: 999;
+    align-content: center;
+}
+.form-wrapper > div {
+    max-width: 515px;
+    margin: auto;
+    padding-bottom: 25px;
 }
 
-
-/* float 2 */
-.labtop-screen {
-	overflow: hidden;
-	transform: translatey(0px);
-	animation: float2 3s ease-in-out infinite;
+.form-wrapper {
+    z-index: inherit;
+}
+.form-wrapper > div > h2 {
+    color: #EE1E53;
+    font-family: syne;
+    font-size: 68px;
+    text-transform: uppercase;
 }
 
-@keyframes float2 {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+.form-wrapper > div > h5 {
+    color: #EE1E53;
+    font-family: syne;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.form-wrapper > form {
+    max-width: 515px;
+    margin: auto;
+    display: grid;
+    grid-gap: 55px;
 }
 
-/* float 3 */
-.floating-ball {
-	overflow: hidden;
-	transform: translatey(0px);
-	animation: float3 3s ease-in-out infinite;
+.form-wrapper > form > input{
+    background-color: transparent;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Barlow', sans-serif;
+    outline: 0;
+    border-bottom: 2px white solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
-@keyframes float3 {
-	0% {
-		transform: translatex(0px);
-	}
-	50% {
-		transform: translatex(20px);
-	}
-	100% {
-		transform: translatex(0px);
-	}
+.form-wrapper > form > textarea{
+    outline: 0;
+    border-bottom: 2px white solid;
+    background-color: transparent;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Barlow', sans-serif;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
-
-
-/* float4 */
-.floating-left-right {
-	overflow: hidden;
-	transform: translatex(0px);
-	animation: float4 3s ease-in-out infinite;
+.form-wrapper > form > button{
+    font-size: 20px;
+    background-color: #fff;
+    height: 80px;
+    width: 250px;
+    border-radius: 5px;
+    border: 0;
 }
 
-@keyframes float4 {
-	0% {
-		transform: translatex(0px);
-	}
-	50% {
-		transform: translatex(-50px);
-	}
-	100% {
-		transform: translatex(0px);
-	}
+.contact-details-wrapper > div{
+    margin-top: 155px;
+}
+.contact-details-wrapper{
+    z-index: inherit;
+}
+.contact-details-wrapper > div > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'Barlow', sans-serif;
 }
 
-/* rotate float */
-/* float 3 */
-.rotating-ball {
-	overflow: hidden;
-	transform: translatey(0px);
-	animation: rotateFloat 3s ease-in-out infinite;
+.contact-details-wrapper > div > p > img {
+    width: 36px;
 }
-
-@keyframes rotateFloat {
-	0% {
-		transform: rotate(30deg);
-	}
-	50% {
-		transform: rotate(-30deg);
-	}
-	100% {
-		transform: rotate(30deg);
-	}
-}
-
-
