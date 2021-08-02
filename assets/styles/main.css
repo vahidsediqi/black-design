@@ -510,13 +510,11 @@ body{
 
 .homepage-why-as-testimo-section-wrapper{
   position: relative;
-  max-height: 1500px;
 }
 
 .whyus-wrapper{
     max-width: 75%;
     margin: auto;
-    padding-left: 48px;
 }
 .whyus-wrapper > h1{
     font-family: Barlow, sans-serif;
@@ -553,18 +551,20 @@ body{
 
 .testimo-inner-wrapper{
     max-width: 75%;
-    margin: 300px auto;
+    margin: 150px auto;
     text-align: center;
-    border: 8px solid #07BDF0;
+    border-left: 2px solid #07BDF0;
+    border-right: 2px solid #07BDF0;
     height: 450px;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 100px;
 }
 
 .testimo-inner-wrapper > p {
-    max-width: 900px;
+    max-width: 1000px;
 }
 /* FLOAT
 ---------- */
