@@ -1,6 +1,7 @@
 
 @import url('http://fonts.cdnfonts.com/css/akira-expanded');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
 /* Normalizing */
@@ -15,6 +16,10 @@ body{
     color: #fff;
 }
 
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+}
 a:hover {
     text-decoration: none;
 }
@@ -269,8 +274,6 @@ a:hover {
 
 .homepage-desc-wrapper > p {
     text-align: center;
-    font-family: 'Barlow', sans-serif;
-    font-size: 19px;
 }
 
 .showcase-form{
@@ -280,8 +283,8 @@ a:hover {
 }
 
 .num-field{
-    height: 60px !important;
-    width: 60%;
+    height: 62px !important;
+    width: 75%;
     background-color: transparent;
     border: 2px solid #07BDF0; 
     color: white;
@@ -290,21 +293,21 @@ a:hover {
     transition: ease-in-out 1s;
 }
 
-.num-field:focus{
+/* .num-field:focus{
     border: none;
     outline: 2px solid #07BDF0; 
     height: 56px !important;
     width: 75%;
-}
+} */
 .showcase-form > button {
-     height: 60px;
+     height: 62px;
      width: 20%;
-     margin-left: -10px;
+     margin-left: -5px;
      background-color: #07BDF0;
-     border: none;
+     border: 2px solid #07BDF0;
      font-size: 18px;
      font-weight: bold;
-     font-family: 'Syne', sans-serif;
+     font-family: 'Barlow' sans-serif;
 }
 
 /* HOMEPAGE SEO SECTION
@@ -367,15 +370,10 @@ a:hover {
    }
 
 
-   
- .homepage-seo-image-wrapper > img:nth-of-type(1){
-       position: absolute;
-       bottom: 0;
-       margin-bottom: -450px;
-   }
    .homepage-seo-image-wrapper > img:nth-of-type(2){
     position: absolute;
-    top: 0;
+    top: 50%;
+    left: 0;
     margin-top: -400px;
 }
 
@@ -386,7 +384,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 85%;
-    margin: 350px auto;
+    margin: 350px auto 200px auto;
     align-items: center;
     padding-top: 40px;
     position: relative;
@@ -454,16 +452,18 @@ a:hover {
     position: absolute;
     top: 0;
     right: 0;
+    margin-right: 90px;
     margin-top: -150px;
 }
 
 
-/* HOMEPAGE SECTION 3 */
+/* HOMEPAGE SECTION 3 
+----------------------*/
 .homepage-sec3-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 90%;
-    margin: 2px auto;
+    margin: auto;
     align-items: center;
     position: relative;
 
@@ -638,7 +638,6 @@ a:hover {
   color: #6CFF6C;
   text-shadow: #6CFF6C 30px 0 50px;
   font-family: bold;
-  font-family: Barlow, sans-serif;
 
 }
 .moon-bg{
@@ -770,7 +769,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     font-size: 35px;
-    font-family: 'Barlow', sans-serif;
 }
 
 .contact-details-wrapper > div > p > img {
@@ -855,6 +853,107 @@ a:hover {
 }
 
 
+
+/* SEO PAGE STYLE STARTS HERE
+------------------------------ */
+.seo-banner-wrapper-outer{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    display: flex;
+}
+
+.seo-banner-wrapper-inner{
+    max-width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 620px;
+    justify-items: center;
+    align-items: center;
+    flex: 1;
+}
+.seo-banner-img{
+height: 1000px;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+.seo-banner-content-wrapper > h4 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2em;
+}
+
+.seo-banner-content-wrapper > h2 {
+    color: #EE1E53;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 4.5em;
+}
+
+.seo-banner-content-wrapper > h5{
+    font-family: 'Syne', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    background: rgb(164, 21, 57);
+    font-size: 4rem;
+    padding-bottom: 10px;
+    /* padding-right: 600px; */
+    padding-left: 90px;
+    position: absolute;
+    width: 45%;
+    right: 0;
+    z-index: 999;
+}
+
+.seo-banner-content-wrapper > p {
+    max-width: 450px;
+    margin-top: 125px;
+}
+
+/* SEO PAGE SECTION 2 */
+
+.seo-page-section-2-wrapper{
+    max-width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 90px auto auto auto;
+    align-items: center;
+}
+
+
+.seo-page-sec2-img-wrapper{
+    position: relative;
+}
+.seo-page-sec2-img-wrapper > img:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: -190px;
+    margin-bottom: -80px;
+}
+
+.seo-page-sec2-content-wrapper{
+    padding-left: 55px;
+}
+.seo-page-sec2-content-wrapper > h4 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Syne', sans-serif;
+}
+
+.seo-page-sec2-content-wrapper > h2 {
+    display: flex;
+    flex-direction: column;
+    color: #07BDF0;
+    font-size: 4em;
+    font-family: 'Syne', sans-serif; 
+}
+
+.seo-page-sec2-content-wrapper > p {
+    max-width: 450px;
+}
 /*  SITE FOOTER */
 
 .footer-outer{
@@ -912,6 +1011,78 @@ a:hover {
     padding-top: 45px;
 }
 
-  
-  
-  
+/*  SEO PAGE SECTION 3 OR CTA SECTION STYLE
+-------------------------------------------- */
+
+.seo-page-sec3-wrapper{
+    padding-top: 155px;
+    max-width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.seo-page-sec3-content-wrapper > h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.seo-page-sec3-content-wrapper > h3 {
+font-family: 'Akira Expanded', sans-serif;
+color: black;
+-webkit-text-stroke-width: 1.5px;
+-webkit-text-stroke-color: #07BDF0;
+font-size: 4rem;
+}
+
+.sec3-form{
+    max-width: 487px;
+}
+
+.sec3-form > button {
+    height: 60px;
+    width: 20%;
+    margin-left: -5px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    background-color: #07BDF0;
+    border: 2px solid #07BDF0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Barlow' sans-serif;
+}
+
+/*      SEO PAGE SECTION 4 
+OTHER STYLES COPIED FROM SECTION 2
+------------------------------------*/
+.seo-page-sec4-wrapper{
+    max-width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.seo-page-sec4-content-wrapper > h4 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Syne', sans-serif;
+}
+
+.seo-page-sec4-content-wrapper > h2 {
+    display: flex;
+    flex-direction: column;
+    color: #07BDF0;
+    font-size: 4em;
+    font-family: 'Syne', sans-serif; 
+}
+
+.seo-page-sec4-content-wrapper > p {
+    max-width: 450px;
+}
+
+.seo-page-sec4-img-wrapper{
+    max-width: 650px;
+}
