@@ -1,16 +1,12 @@
 
-@import url('http://fonts.cdnfonts.com/css/akira-expanded');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
 
 /*--------------------
   ---TABEL OF CONTENT----
   -----PAGES--------
- 1. SEO PAGE STYLE
- 2. SEO1 PAGE STYLE
-
+ 1. HOME PAGE DESIGN
+ 2. SEO PAGE STYLE
+ 3. WEB DESIGN PAGE
+ 4. LOGO DESIGN PAGE
 */
 /* Normalizing */
 *{
@@ -26,10 +22,13 @@ body{
 
 p {
     font-family: 'Barlow', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
 }
 a:hover {
     text-decoration: none;
+}
+.section-spacer{
+ height: 120px;
 }
 /* ANIMATIONS AND FLAUTINGS */
 /* FLOAT
@@ -129,9 +128,8 @@ a:hover {
 	}
 }
 
-/* HOME PAGE HERO SECTION 
+    /* HOME PAGE DESIGN 
 --------------------------*/
-@media only screen and  (min-width: 1750px) {
     .homepage-hero-wrapper{
         background-position: center;
         display: grid;
@@ -235,7 +233,7 @@ a:hover {
       display: grid;
       align-items: center;
       justify-content: center;
-      padding: 145px auto;
+      padding-top: 100PX;
     }
     
     .homepage-showcase-title-wrapper{
@@ -285,13 +283,34 @@ a:hover {
         text-align: center;
         max-width: 487px;
         margin: auto;
-    }
+        height: 62px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        }
     
     .num-field{
+        height: 100%;
+        background-color: transparent;
+        border: 2px solid #07BDF0; 
+        color: white;
+        padding-left: 15px;
+        font-family: 'Syne', sans-serif;
+        outline: 0;
+    }
+    .showcase-form > button {
+         height: 100%;
+         background-color: #07BDF0;
+         border:0;
+         font-size: 18px;
+         font-weight: bold;
+         font-family: 'Barlow' sans-serif;
+    }
+
+    .num-field-red{
         height: 62px !important;
         width: 75%;
         background-color: transparent;
-        border: 2px solid #07BDF0; 
+        border: 2px solid #EE1E53; 
         color: white;
         padding-left: 15px;
         font-family: 'Syne', sans-serif;
@@ -304,31 +323,21 @@ a:hover {
         height: 56px !important;
         width: 75%;
     } */
-    .showcase-form > button {
-        height: 62px;
-        width: 20%;
-         margin-left: -5px;
-         background-color: #07BDF0;
-         border: 5px solid #07BDF0;
-         font-size: 18px;
-         font-weight: bold;
-         font-family: 'Barlow' sans-serif;
-    }
+  
     
     /* HOMEPAGE SEO SECTION
     ------------------------ */
     .homepage-seo-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 90%;
-        margin: 200px auto;
+        justify-items: center;
         align-items: center;
-     
+        grid-gap: 8%;
+        max-width: 90%;
+        margin: auto;
     }
     
-    .homepage-seo-content-wrapper{
-        margin-left: 150px;
-    }
+  
     
     .homepage-seo-content-wrapper > h2:nth-of-type(1){
         color: #07BDF0;
@@ -357,7 +366,7 @@ a:hover {
     
     .homepage-seo-content-wrapper > p:nth-of-type(1){
         font-family: 'Barlow';
-        max-width: 375px;
+        max-width: 75%;
     }
     
     .learn-more-btn{
@@ -388,11 +397,10 @@ a:hover {
     .homepage-design-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 85%;
-        margin: 350px auto 200px auto;
+        grid-gap: 8%;
+        max-width: 90%;
+        margin:auto;
         align-items: center;
-        padding-top: 40px;
-        position: relative;
     }
     
     .homepage-design-content-wrapper{
@@ -436,11 +444,11 @@ a:hover {
     
     .homepage-design-image-wrapper{
         margin-right: 95px;
+        position: relative;
        }
     
      .homepage-design-image-wrapper > img:nth-of-type(1){
          max-height: 650px;
-        position: absolute;
         top:0;
        }
        .homepage-design-image-wrapper > img:nth-of-type(2){
@@ -449,7 +457,8 @@ a:hover {
         bottom: 0;
         margin-bottom: 50px;
         right: 0;
-        margin-right: 290px;
+        margin-right: 235px;
+        
     }
     
     /* BELL */
@@ -466,18 +475,17 @@ a:hover {
     ----------------------*/
     .homepage-sec3-wrapper{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10%;
         max-width: 90%;
         margin: auto;
+        justify-self: center;
         align-items: center;
-        position: relative;
-    
     }
     
-    .homepage-sec3-content-wrapper{
-        margin-left: 150px;
-    
-    }
+    /* .homepage-sec3-content-wrapper{
+        
+    } */
     
     .homepage-sec3-content-wrapper > h2:nth-of-type(1){
         color: #EE1E53;
@@ -513,14 +521,14 @@ a:hover {
         font-family: 'Barlow';
        font-size: 20px;
        font-weight: bold;
+      }
+    
+      .homepage-sec3-image-wrapper{
+          position: relative;
+
     }
     
-    /* .homepage-sec3-image-wrapper{
-       } */
-    
-    
      .homepage-sec3-image-wrapper > img:nth-of-type(1){
-         position: absolute;
          top: 0;
          left: 0;
          margin-left: 230px;
@@ -531,13 +539,14 @@ a:hover {
            margin-top: -100px;
            margin-left: -120px;
     }
-    
+   
+
     .homepage-sec3-image-wrapper > img:nth-of-type(3){
         position: absolute;
         top: 0;
         margin-top: 300px;
         margin-left: 120px;
-    }
+    } 
     
     
     /* HOMEPAGE SECTION 4
@@ -546,7 +555,7 @@ a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         max-width: 85%;
-        margin: 200px auto;
+        margin:auto auto 150px auto;
         align-items: center;
         padding-top: 90px;
         position: relative;
@@ -594,12 +603,12 @@ a:hover {
     }
     
     
-    
      .homepage-sec4-image-wrapper > img:nth-of-type(1){
         position: absolute;
         top:0;
         right: 0;
         margin-right: 300px;
+        max-width: 950px;
         
        }
        .homepage-sec4-image-wrapper > img:nth-of-type(2){
@@ -883,7 +892,7 @@ a:hover {
     }
     
     .space-right{
-        height: 200px;
+        height: 100px;
     }
     .inner-content > span {
         color: #07BDF0;
@@ -894,7 +903,9 @@ a:hover {
      display: inline;
      font-size: 20px;
     }
-    
+    .process-grid-inner {
+        margin-bottom: 50px;
+    }
     .process-title-wrapper > h2 {
         color: #07BDF0;
         font-size: 6rem;
@@ -1034,10 +1045,11 @@ a:hover {
     
     .seo-page-sec3-wrapper{
         padding-top: 95px;
-        max-width: 80%;
+        max-width: 85%;
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
         align-items: center;
     }
     
@@ -1059,7 +1071,7 @@ a:hover {
         max-width: 487px;
     }
     
-    .sec3-form > button {
+    .cta-btn-blue {
         height: 60px;
         width: 20%;
         margin-left: -5px;
@@ -1067,6 +1079,19 @@ a:hover {
         padding-top: 5px;
         background-color: #07BDF0;
         border: 2px solid #07BDF0;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Barlow' sans-serif;
+    }
+
+    .cta-btn-red {
+        height: 60px;
+        width: 20%;
+        margin-left: -5px;
+        padding-bottom: 8px;
+        padding-top: 5px;
+        background-color: #EE1E53;
+        border: 2px solid #EE1E53;
         font-size: 18px;
         font-weight: bold;
         font-family: 'Barlow' sans-serif;
@@ -1105,8 +1130,39 @@ a:hover {
         max-width: 650px;
     }
 
+
+    /* -------------------
+SEO PAGE SECTION 4 OR TOOLS SECTION
+--------------------- */
+.seo-tools-wrapper{
+    max-width: 80%;
+    margin: 95px auto;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-column-gap: 100px;
+    align-items: center;
+}
+
+.seo-tools-content-wrapper > h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-transform: uppercase;
+    font-family: 'Syne', sans-serif;
+    font-size: 7rem;
+}
+.seo-tools-content-wrapper > h2 > span:nth-child(1){
+    font-size: 2rem;
+}
+
+.seo-tools-content-wrapper > h2 > span:nth-child(2){
+    color: #07BDF0;
+}
+
+.seo-tools-content-wrapper > h2 > span:nth-child(3){
+    color: #07BDF0;
+}
     /*---------------- 
-    SEO1 PAGE STYLE
+     WEB DESIGN PAGE
     ---------------- */
 
     .seo1-banner-wrapper{
@@ -1155,9 +1211,65 @@ a:hover {
        width: 90%;  
        padding-left: 200px;
     }
+
+/* SEO 1 SECTOIN 2 */
+
+.seo1-section2-wrapper {
+   max-width: 85%;
+   margin: 95px auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
+   align-items: center; 
+   grid-column-gap: 95px;
+   /* border: 1px solid white; */
 }
 
+.seo1-section2-wrapper > div:nth-child(2) > h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-transform: uppercase;
+    font-family: 'Syne', sans-serif;
+    color: #EE1E53;
+    font-size: 6rem;
+}
 
+.seo1-section2-wrapper > div:nth-child(2) > h2 > span:nth-child(1){
+    color: #fff;
+    font-size: 32px;
+}
+
+.seo1-page-sec3-content-wrapper > h3 {
+    font-family: 'Akira Expanded', sans-serif;
+    color: black;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #EE1E53;
+    font-size: 4rem;
+    }
+
+
+    /* LOGO DESIGN PAGE  */
+
+    .logo-design-page-banner-wrapper {
+        margin-top: 180px;
+        border: 2px solid white;
+        height: auto;
+    }
+
+    .logo-design-page-banner-wrapper > div:nth-child(1){
+        max-width: 45%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .logo-design-page-banner-wrapper > div:nth-child(1){
+        text-align: center;
+    }
+
+    .logo-design-page-banner-wrapper > div:nth-child(1) > h1:nth-child(1){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 /* ---------------------------
 SITE FOOTER
 --------------------------- */
@@ -1220,5 +1332,123 @@ SITE FOOTER
 }
 
 /* ---------------------------------------------------------
--------------END EXTRA OF LARG SCREEN----------------------
+-------------END OF EXTRA LARG SCREENS----------------------
 ----------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------
+-------------TABLETE & NOTPADE SCREENS ---------------------
+----------------------------------------------------------- */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* HOMEPAGE MOBILE DESIGN */
+
+    .homepage-hero-wrapper{
+        background-position: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        align-items: center;
+        justify-items: center;
+        height: 100vh;
+        position: relative;
+        z-index: 999;
+        transition: ease-in-out .5s;
+    }
+    .homepage-middle-title{
+        display: flex;
+        flex-direction: column;
+        color: #07BDF0;
+        font-size: 18em;
+        font-family: 'Heaters';
+        line-height: 0.5;
+        padding-left: 150px;
+        margin-top: 150px;
+    }
+    
+    .can-img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: -100px;
+    }
+    .can-splash{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 195px;
+        margin-right: 220px;
+    }
+    .homepage-first-title{
+      position: absolute;
+      left: 0;
+      bottom: 50%;
+      margin-bottom: -210px;
+      color:#EE1E53;
+      font-size: 15rem;
+      font-family: 'Lemon/Milk light Regular';
+      z-index: 0;
+    }
+    
+    .homepage-third-title{
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        margin-bottom: -210px;
+        margin-right: -90px;
+        color:#EE1E53;
+        font-size: 15rem;
+        font-family: 'Lemon/Milk light Regular';
+        z-index: 0;
+      }
+    
+    .second-title-wrapper{
+        z-index: inherit;
+    }
+    
+    /* HOME PAGE FLOATING IMAGES ABSLUTE CLASSES STYLES 
+    ----------------------------------------------------*/
+    .homepage-banner-labtop{
+        position: absolute;
+        top: 0;  
+        margin-top: 112px;
+    }
+    
+    .homepage-banner-labtopscreen {
+        position: absolute;
+        top: 0;  
+        margin-top: 112px;  
+    }
+    
+    /* .homepage-hero-wrapper:hover {
+        transform: scale(0.5) translate(-1%);
+    } */
+    .homepage-banner-ball{
+        position: absolute;
+        top:0;
+        left: 0;
+        margin-left: 500px;
+        margin-top: 50px;
+    }
+    
+    .img-banana{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 350px;
+        margin-bottom: -112px;
+    }
+  
+}
+
+
+
+
+
+/* ---------------------------------------------------------
+-------------X-SMALL AND SMALL SCREENS (MOBILE) --------------
+----------------------------------------------------------- */
+
+@media only screen and (max-width: 850PX){
+
+}
+
