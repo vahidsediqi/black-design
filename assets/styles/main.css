@@ -1288,6 +1288,91 @@ SEO PAGE SECTION 4 OR TOOLS SECTION
         text-transform: uppercase;
         font-weight: 900;
     }
+
+    /* LOGO DESIGN PAGE SECTION 1 */
+
+    .logo-design-section1-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 55px;
+        max-width: 90%;
+        margin: auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .logo-design-section1-content-wrapper > h2:nth-child(1) {
+        text-transform: uppercase;
+        font-size: 39px;
+        font-family: 'syne', sans-serif;
+    }
+
+    .logo-design-section1-title {
+        color: #FFFF00;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-transform: uppercase;
+        font-size: 89px;
+        font-family: 'syne', sans-serif;
+
+    }
+    .logo-design-section1-content-wrapper  p {
+        max-width: 550px;
+    }
+
+    .logo-design-section1-image-wrapper > img {
+        max-width: 100%;
+    }
+
+    /* LOGO DESIGN PAGE SECTION 2 */
+
+    .logo-design-page-section2-wrapper{
+        max-width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .logo-design-page-secion2-image-wrapper > img {
+      width: 100%;
+    }
+
+  
+
+    .logo-design-page-secion2-content-wrapper > h2:nth-child(1){
+       font-size: 68px;
+       text-transform: uppercase;
+       font-family: 'syne', sans-serif;
+    }
+
+    .logo-design-page-secion2-content-wrapper > h2:nth-child(2){
+        font-size: 68px;
+        text-transform: uppercase;
+        font-family: 'Akira Expanded', sans-serif;
+        color: black;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color:#FFFF00
+     }
+     .logo-design-page-form {
+         display: grid;
+         grid-template-columns: 3fr 1fr;
+         height: 62px;
+       }
+
+       .logo-design-page-form > input {
+           background-color: transparent;
+           outline: 0;
+           border: 3px #FFFF00 solid;
+           color: white;
+           padding-left: 15px;
+       }
+       .logo-design-page-form > button {
+           border-color: #FFFF00;
+           background-color: #FFFF00;
+           color: black;
+           cursor: pointer;
+       }
 /* ---------------------------
 SITE FOOTER
 --------------------------- */
@@ -1350,123 +1435,252 @@ SITE FOOTER
 }
 
 /* ---------------------------------------------------------
--------------END OF EXTRA LARG SCREENS----------------------
+-------------TO HIDE AND SHOE ANIMATED IMAGES --------------
 ----------------------------------------------------------- */
+@media only screen and (min-width: 1100PX){
+  .img-for-mob{
+      display: none;
+  }
+}
 
 
 /* ---------------------------------------------------------
 -------------TABLETE & NOTPADE SCREENS ---------------------
 ----------------------------------------------------------- */
 @media (min-width: 601px) and (max-width: 900px) {
-    /* HOMEPAGE MOBILE DESIGN */
-
-    .homepage-hero-wrapper{
-        background-position: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 95%;
-        align-items: center;
-        justify-items: center;
-        height: 100vh;
-        position: relative;
-        z-index: 999;
-        transition: ease-in-out .5s;
-    }
-    .homepage-middle-title{
-        display: flex;
-        flex-direction: column;
-        color: #07BDF0;
-        font-size: 18em;
-        font-family: 'Heaters';
-        line-height: 0.5;
-        padding-left: 150px;
-        margin-top: 150px;
-    }
     
-    .can-img{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin-bottom: -100px;
-    }
-    .can-splash{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin-bottom: 195px;
-        margin-right: 220px;
-    }
-    .homepage-first-title{
-      position: absolute;
-      left: 0;
-      bottom: 50%;
-      margin-bottom: -210px;
-      color:#EE1E53;
-      font-size: 15rem;
-      font-family: 'Lemon/Milk light Regular';
-      z-index: 0;
-    }
-    
-    .homepage-third-title{
-        position: absolute;
-        right: 0;
-        bottom: 50%;
-        margin-bottom: -210px;
-        margin-right: -90px;
-        color:#EE1E53;
-        font-size: 15rem;
-        font-family: 'Lemon/Milk light Regular';
-        z-index: 0;
-      }
-    
-    .second-title-wrapper{
-        z-index: inherit;
-    }
-    
-    /* HOME PAGE FLOATING IMAGES ABSLUTE CLASSES STYLES 
-    ----------------------------------------------------*/
-    .homepage-banner-labtop{
-        position: absolute;
-        top: 0;  
-        margin-top: 112px;
-    }
-    
-    .homepage-banner-labtopscreen {
-        position: absolute;
-        top: 0;  
-        margin-top: 112px;  
-    }
-    
-    /* .homepage-hero-wrapper:hover {
-        transform: scale(0.5) translate(-1%);
-    } */
-    .homepage-banner-ball{
-        position: absolute;
-        top:0;
-        left: 0;
-        margin-left: 500px;
-        margin-top: 50px;
-    }
-    
-    .img-banana{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin-right: 350px;
-        margin-bottom: -112px;
-    }
-  
+     
 }
-
-
-
 
 
 /* ---------------------------------------------------------
 -------------X-SMALL AND SMALL SCREENS (MOBILE) --------------
 ----------------------------------------------------------- */
 
-@media only screen and (max-width: 850PX){
+@media only screen and (max-width: 1100PX){
+ 
+    /* GLOBALE */
+    .img-for-mob {
+        width: 100%;
+    }
 
+    .section-spacer {
+        height: 55px;
+    }
+    /* HOME PAGE FOR MOBILE */
+
+    /* HERO SECTION */
+    .homepage-hero-wrapper{
+        display: none;
+    }  
+
+
+    /* SHOW CASE or CTA SECTION */
+    .homepage-showcase-image-wrapper {
+       display: none;
+    }
+
+    .homepage-showcase-title-wrapper{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 35px auto;
+    }
+    .homepage-showcase-title-wrapper > h1:nth-of-type(1){
+        font-size: 2rem;
+    }
+    
+    .homepage-showcase-title-wrapper > h2:nth-of-type(1){
+        -webkit-text-stroke-width: 2px;
+        font-size: 2.5rem;
+    }
+    
+
+    /* HOMEPAGE SEO SECTION */
+
+    .homepage-seo-wrapper{
+        grid-template-columns:auto;
+    }
+    
+    .homepage-seo-content-wrapper {
+        text-align: center;
+    }
+        
+    .homepage-seo-content-wrapper hr {
+        margin: auto;
+    }
+       
+    .homepage-seo-content-wrapper > h2:nth-of-type(1){
+        font-size: 35px;
+    }
+    
+    .homepage-seo-content-wrapper > h2:nth-of-type(2){
+        font-size: 4rem;
+    }
+    
+
+    .homepage-seo-content-wrapper > p:nth-of-type(1){
+        font-family: 'Barlow';
+        max-width: 100%;
+        padding-top: 25px;
+    }
+
+    .homepage-seo-image-wrapper{
+        position: relative;
+         }
+      
+    
+     .homepage-seo-image-wrapper > img:nth-of-type(2){
+      display: none;
+      }
+      
+      .homepage-seo-image-wrapper > img:nth-of-type(1){
+        display: none;
+        }
+
+      /*DISNG SECTION */
+      .homepage-design-wrapper{
+        grid-template-columns: auto;
+        padding-top: 45px;
+        grid-template-areas: 
+            "img"
+            "text";
+      }
+
+      .homepage-design-image-wrapper {
+          padding: 45px 25px 0 25px;
+          grid-area: img;
+          text-align: center;
+          margin: auto;
+      }
+
+      .homepage-design-image-wrapper > img:nth-of-type(1){
+        display: none;
+      }
+
+      .homepage-design-image-wrapper > img:nth-of-type(2){
+        display: none;
+       }
+   
+   /* BELL */
+   .homepage-design-image-wrapper > img:nth-of-type(3){
+       display: none;
+      }
+    .homepage-design-content-wrapper{
+        padding: 25px;
+        text-align: center;
+        grid-area: text;
+     }
+    
+    .homepage-design-content-wrapper hr {
+        margin: auto;
+    }
+    .homepage-design-content-wrapper > h2:nth-of-type(1){
+        font-family: 'syne', sans-serif;
+        font-size: 32px;
+    }
+    
+    .homepage-design-content-wrapper > h2:nth-of-type(2){
+        font-size: 45px;
+    }
+    
+    .homepage-design-content-wrapper > p:nth-of-type(1){
+        font-family: 'Barlow';
+        max-width: 100%;
+    }
+
+
+      /* HOMEPAGE SECTION 3 
+    ----------------------*/
+    .homepage-sec3-wrapper{
+        grid-template-columns:auto;
+
+    }
+    
+
+    .homepage-sec3-content-wrapper{
+        text-align: center;
+    }
+    
+    .homepage-sec3-content-wrapper hr{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .homepage-sec3-content-wrapper > h2:nth-of-type(1){
+        font-size: 45px;
+    }
+
+    
+    .homepage-sec3-content-wrapper > p:nth-of-type(1){
+        max-width: 100%;
+    }
+    
+      .homepage-sec3-image-wrapper {
+        padding-top: 45px;
+    }
+    
+     .homepage-sec3-image-wrapper > img:nth-of-type(1){
+        display: none;
+       }
+       .homepage-sec3-image-wrapper > img:nth-of-type(2){
+        display: none;
+    }
+   
+
+    .homepage-sec3-image-wrapper > img:nth-of-type(3){
+        display: none;
+
+    } 
+
+    /* HOMEPAGE SECTION 4
+    ------------------------ */
+    .homepage-sec4-wrapper{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "img"
+        "text";
+    }
+    
+    .homepage-sec4-content-wrapper{
+        padding: 15px;
+        grid-area: text;
+        text-align: center;
+    }
+     
+    .homepage-sec4-image-wrapper {
+        grid-area: img;
+    }
+    .homepage-sec4-content-wrapper hr {
+        margin: auto;
+    }
+    
+     .homepage-sec4-image-wrapper > img:nth-of-type(1){
+        display: none;
+       }
+       .homepage-sec4-image-wrapper > img:nth-of-type(2){
+        display: none;
+    }
+    .homepage-sec4-image-wrapper > img:nth-of-type(3){
+        display: none;
+    }
+
+
+
+    /* FOOTER FOR SMALL SCREEN MOBILE */
+    .footer-title-wrapper{
+     padding: 55px 25PX 0px 25px;
+    }
+    .footer-title-wrapper > h2 {
+        font-size: 25px;
+    }
+
+    
+    .footer-link-wrapper > div {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 35px;
+        justify-items: center;
+        padding-top: 45px;
+    }
+    
 }
 
