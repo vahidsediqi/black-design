@@ -1441,6 +1441,9 @@ SITE FOOTER
   .img-for-mob{
       display: none;
   }
+  .homepage-mobile-hero {
+      display: none;
+  }
 }
 
 
@@ -1469,6 +1472,23 @@ SITE FOOTER
     }
     /* HOME PAGE FOR MOBILE */
 
+     .homepage-mobile-hero{
+         background-image: url('../images/homepage-mobile-hero-image.webp');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         text-align: center;
+         height: 50vh;
+         padding-top: 80px;
+         margin-top: 150px;
+      }
+ 
+      .homepage-middle-title {
+          font-size: 9rem;
+          position: static;
+          padding: 0px;
+          margin: -55px;
+      }
     /* HERO SECTION */
     .homepage-hero-wrapper{
         display: none;
@@ -1476,6 +1496,9 @@ SITE FOOTER
 
 
     /* SHOW CASE or CTA SECTION */
+    .homepage-showcase-wrapper {
+        margin-top: -15px;
+    }
     .homepage-showcase-image-wrapper {
        display: none;
     }
